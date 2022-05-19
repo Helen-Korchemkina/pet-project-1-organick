@@ -74,7 +74,9 @@ nav {
 }
 .header__link {
   color: #274C5B;
+  transition: color 500ms linear;
 }
+.header__link:hover, .header__link:focus,
 .header__main-link {
   color: #7EB693;
 }
@@ -122,6 +124,11 @@ align-items: center;
   background-color: #EFD372;
   color: #274C5B;
   margin-top: 30px;
+  transition: color 500ms linear, background-color 500ms linear;
+}
+.hero__button:hover, .hero__button:focus {
+    color: #EFD372;
+    background-color: #274C5B;
 }
 .hero__button img {
   background-color: #335B6B;
@@ -233,8 +240,13 @@ font-size: 18px;
   width: 199px;
   background-color: #274C5B;
   letter-spacing: 0.6px;
-  color: #fff;
+  color: #ffffff;
   margin-top: 50px;
+  transition: color 500ms linear, background-color 500ms linear;
+}
+.about-us button:hover, .about-us button:focus {
+color: #274C5B;
+background-color: #B8B8B8;
 }
 .about-us button img {
   background-color: #335B6B;
@@ -268,7 +280,13 @@ gap: 20px;
 }
 .our-products__card {
 background-color: #F9F8F8;
+border: none;
 border-radius: 10px;
+transition: transform 500ms linear;
+}
+.our-products__card:hover, .our-products__card:focus {
+  transform: scale(1.05);
+  border: 1px solid #525C60;
 }
 .our-products__type-box {
 margin-top: 30px;
@@ -524,6 +542,11 @@ background-color: #FFFFFF;
   font-size: 20px;
   line-height: 1,6;
   border: 1px solid #274C5B;
+  transition: color 500ms linear, background-color 500ms linear;
+}
+.news__button:hover, .news__button:focus {
+  color: #FFFFFF;
+  background-color: #274C5B;
 }
 .news__button img {
     background-color: #335B6B;
@@ -587,6 +610,11 @@ background-color: inherit;
   line-height: 1,4;
   letter-spacing: 0.36px;
   color: #274C5B;
+  transition: color 500ms linear, background-color 500ms linear;
+}
+.news__view:hover, .news__view:focus {
+  background-color: #274C5B;
+  color: #ffffff;
 }
 .news__view img {
       background-color: #335B6B;
@@ -629,9 +657,121 @@ display: flex;
 width: 197px;
 background-color: #274C5B;
 color: #FFFFFF;
+transition: color 500ms linear, background-color 500ms linear;
+}
+.subscribe__btn:hover, .subscribe__btn:focus {
+  color: #274C5B;
+  background-color: #FFFFFF;
 }
 .subscribe__btn img {
       background-color: #335B6B;
         border-radius: 50%;
         padding: 11px;
+}
+footer .container {
+  display: flex;
+  justify-content: space-around;
+  background-color: #FFFFFF;
+  padding-top: 182px;
+  padding-bottom: 148px;
+}
+.footer__address {
+  text-align: right;
+  width: 270px;
+    font-style: normal;}
+.footer__address h2 {
+  font-size: 30px;
+  line-height: 1,4;
+  margin-bottom: 35px;
+}
+.footer__address li:not(:last-child) {
+  margin-bottom: 40px;
+}
+.footer__address h3 {
+font-family: 'Open Sans';
+  font-size: 18px;
+  line-height: 1,3;
+  margin-bottom: 5px;
+}
+.footer__address a {
+font-family: 'Open Sans';
+  font-size: 18px;
+  line-height: 1,6;
+  color: #525C60;
+  transition: color 500ms linear;
+}
+.footer__address a:hover, .footer__address a:focus {
+  color: #7EB693;
+}
+.footer__socials {
+  text-align: center;
+  width: 670px;
+}
+.footer__logo {
+display: inline-block;
+justify-content: center;
+margin-bottom: 44px;
+}
+.footer__socials p {
+  font-family: 'Open Sans';
+    font-size: 18px;
+    line-height: 1,8;
+    margin-bottom: 50px;
+}
+.footer__socials ul {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 144px;
+  padding-right: 144px;
+}
+.footer__socials li {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #EFF6F1;
+  position: relative;
+  transition: background-color 500ms linear;
+  }
+.footer__socials li:hover, .footer__socials li:focus {
+      background-color:#EFD372;
+    }
+.footer__socials a {
+position: absolute;
+left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.footer__pages {
+  text-align: left;
+  width: 335px;
+}
+.footer__pages h2 {
+    font-size: 30px;
+    line-height: 1,4;
+    margin-bottom: 20px;
+}
+.footer__pages ul {
+  font-family: 'Open Sans';
+    font-size: 18px;
+    line-height: 1,6;
+}
+.footer__pages li:not(:last-child) {
+  margin-bottom: 24px;
+}
+.footer__down {
+text-align: center;
+width: 1440px;
+margin: 0 auto;
+background-color: #FFFFFF;
+padding-top: 28px;
+padding-bottom: 28px;
+border-top: 1px solid #E0E0E0;
+font-family: 'Open Sans';
+  font-size: 18px;
+  line-height: 1,8;
+  color: #525C60;
+}
+.footer__done-by {
+line-height: 1, 6;
+color: #274C5B;
 }

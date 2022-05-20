@@ -285,7 +285,7 @@ border-radius: 10px;
 transition: transform 500ms linear;
 }
 .our-products__card:hover, .our-products__card:focus {
-  transform: scale(1.05);
+  transform: scale(1.03);
   border: 1px solid #525C60;
 }
 .our-products__type-box {
